@@ -48,3 +48,26 @@ Null : Object
 Function : Function hi he lekin Object Function khte hen
 All non-primitive are objects (Type of).
 */
+
+//working of memory allocation in JavaScript
+
+//Stack(primitive) variable declare karne k bad us ka refrence milta he bajai original value k, Heap(non-primitive type) yahan milta he refrence original value kaa aur jo bhi change karoge wo originally change hota he 
+let playerthree = "p3"
+let playerFour = playerthree
+//output: same values hongi "p3"
+
+playerFour = "p4"
+console.log(playerthree);
+console.log(playerFour);
+
+let userOne = {
+    email: "sh@gmail.com",
+    alp: "user@yjd"
+}
+
+let userTwo = userOne
+userTwo.email = "shnnn@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
