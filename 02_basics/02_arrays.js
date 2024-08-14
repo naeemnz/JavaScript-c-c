@@ -32,32 +32,3 @@ let score3 = 300
 let score4 = 400
 //of returns a new array from set of elements, variables lelo yahan, arrays bhi hosakte hen
 console.log((Array.of(score1,score2,score3,score4)));//output: [100, 200, 300, 400]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
