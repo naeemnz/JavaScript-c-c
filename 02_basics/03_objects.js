@@ -1,4 +1,4 @@
-//node 02_basics/03_objects.js Objects ko declare karne ke do tariqe hen 1. literals: Singleton nahin banta he ya hota kuk isk multiple instances bante hen 2. Constructor , Singleton: agr ap constructor k zariye object banate hen to wo singleton hoga kuk wo apni tarah ka ek hi object he
+//Objects ko declare karne ke do tariqe hen 1. literals: Singleton nahin banta he ya hota kuk isk multiple instances bante hen 2. Constructor , Singleton: agr ap constructor k zariye object banate hen to wo singleton hoga kuk wo apni tarah ka ek hi object he
 
 //ye constructor method k through declare karne ka tariqa he: Object.create aur ye singleton hi banata he
 
