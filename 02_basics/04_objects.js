@@ -57,11 +57,42 @@ const users = [
 ]
 //ye ek array he is liye hm . use karenge, users array ki first value jo k ek object he aur us object me jo key he email us ki value ko access karna he
 users[1].email
-console.log(tinderUser);
+// console.log(tinderUser);
 
 //ye Object.keys jume keys dega as array output men jis par hum array k sare methods laga sakte he
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));//values k liye
-console.log(Object.entries(tinderUser));//is me har key value k pair ko as single array output me dikhata he, key aur value ka ek alag array hoga
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));//kai bar objects men loop through karrahe he aur hm koi value nikalna chah rahe hen, kai bar esa hota he k value exist nahin karti to uskmliye hum pehle check karte he kia ye property exist karti he ya nahin
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));//values k liye
+// console.log(Object.entries(tinderUser));//is me har key value k pair ko as single array output me dikhata he, key aur value ka ek alag array hoga
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));//kai bar objects men loop through karrahe he aur hm koi value nikalna chah rahe hen, kai bar esa hota he k value exist nahin karti to uskmliye hum pehle check karte he kia ye property exist karti he ya nahin
 //ye ek extra check hota he property ko istamal karne se pehle
+
+//destructuring of object
+const list = {
+    column1: 'website name',
+    column2: '999',
+    column3: 'Shamsia'
+}
+
+// list.column1 //ye tariqa bhi sahi he lekin niche ek aur tariqa bhi he jo bar bar ye likhne se bachata he humen
+const {column1} = list //sub se pehle hum likhte hen const uske bad hum likhte hen k humen kahan se values extract karni hen
+console.log(column1);
+
+//agr humen ye column lafz ko rename karna he kisi chote lafz se to ye bhi hum karsakte hen
+const {column1: c1} = list
+console.log(c1);
+
+//ye ek example he react ki k hum wahan pe kese karte hen, wahan per by default log har chiz props.company, props.ye... nahin karte  
+// const navbar = (props.comapny) => { //ye ghalat nahin he lekin aicha bhi nahe kuk naam baar baar liya jaraha he ye
+//     //sahi tariqa ye he const navbar = ({company}) = > {} //yahan par company naam he jese :c1 yahan destructure kia ja raha he
+// }
+// navbar(comapny = 'shami')
+
+//api ki values ati json ki shakal men, neche ek misal he api ki, yahan paer keys bhi ek proper string hoti he aur values bhi ek string hoti he, Java Script Object Notation 
+// {
+//     "name":"shamsia",
+//     "crname": "fridh",
+//     "website": "columns"
+// }
+//[{}, {}, {}] lazmi nahin he k ek api ek object ho wo arrays ki shakal me bhi hosakta he
+//https://randomuser.me/
+//json formatter
